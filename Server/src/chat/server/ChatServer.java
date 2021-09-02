@@ -54,7 +54,7 @@ public class ChatServer implements TcpConnectionObserver {
         System.out.println(msg);
 
         for (int i = 0; i < connections.size(); i++) {
-            if(connections.get(i).id!=tcpConnection.id)
+            //if(connections.get(i).id!=tcpConnection.id)
                 connections.get(i).sendMessage(msg);
         }
     }
